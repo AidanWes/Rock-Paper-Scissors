@@ -1,0 +1,1 @@
+To view the game click here: https://aidanwes.github.io/Rock-Paper-Scissors/
