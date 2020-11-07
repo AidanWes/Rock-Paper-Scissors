@@ -11,7 +11,7 @@ function handSelect(hand, flag){
         output.innerHTML = hand;
         output.style.color = handColor(hand.toLowerCase());
         player = hand;
-        setTimeout(robotMove, 2000);
+        setTimeout(robotMove, 1500);
     }
     else
     {
@@ -19,7 +19,7 @@ function handSelect(hand, flag){
         output.innerHTML = hand;
         output.style.color = handColor(hand.toLowerCase());
         robot = hand;
-        winner(player, robot);
+        setTimeout(winner, 750);
     }
 }
 
@@ -50,7 +50,7 @@ function robotMove() {
     }
 }
 
-function winner(player, robot) {
+function winner() {
     if (player === robot)
         win(0);
     else if(player === 'Rock' && robot === 'Paper' ||
